@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e0c3f1;
+}
+
 header {
     display: grid;
     grid-template-columns: 44px auto 44px;
@@ -5,6 +17,7 @@ header {
     column-gap: 5px;
     border-bottom: solid #ddd;
     align-items: end;
+    background-color: #e0c3f1;
 }
 
 header img {
@@ -73,6 +86,7 @@ main {
     background-color: #8b8bca;
     color: #2b0e2b;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -84,35 +98,140 @@ p {
     text-align: center;
 }
 
+h2 {
+    background-color: #2b0e2b;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
 
-@media only screen and (min-width: 38em) {
+.card {
+    display: block;
+    width: 80%;
+}
 
-    header, main, nav, footer {
+#about-me {
+    text-align: left;
+}
 
-        max-width: 900px;
-    }
+.card {
+    background-color: #e0c3f1;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.card p, .card img {
+    padding: 20px;
+}
+
+#courses {
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#courses button {
+
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    color:#2b0e2b;
+    cursor: pointer;
+
+}
+
+#course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.course-card {
+
+    border-radius: 10px;
+    font-size: 1.2em;
+    margin: 10px;
+
+}
+
+.complete {
+
+    background-color:#2b0e2b;
+    color: white;
+    border: solid 5px #ffffff;
+}
+
+.incomplete {
+
+    background-color: #fff;
+    color:black;
+    border: #2b0e2b solid 5px;
+}
+
+footer {
+    
+    text-align: center;
+    background-color: #8b8bca;
+    margin-top: 20px;
+    
+}
+
+footer a img {
+    box-sizing: initial;
+    height: 30px;
+    width: auto;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
 
     header {
         display: grid;
-        grid-template-columns: 24px auto;
+        grid-template-columns: 44px auto;
     }
-
-
+    
+    
     .hamburger {
         display: none;
     }
-
+    
     .navigation {
         display: block;
         border-bottom: solid 1px #ddd;
     }
-
+    
     .navigation ul {
         display: flex;
     }
-
+    
     .navigation a {
         border: none;
     }
     
+    .card {
+        display: inline-block;
+        width: auto;
+    }
+    
+    #about-me {
+        text-align: left;
+        max-width: 700px;
+        min-height: 392px;
+    }
+
+    #course-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #courses {
+        max-width: 80%;
+        margin: 0 auto;
+
+    }
 }

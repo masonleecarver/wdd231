@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helloo</title>
+    <meta name="author" content="Lennie Lee Carver">
+    <meta name="description" content="All about Lennie Lee Carver and the classes that they have taken.">
+    <title>Lennie Lee</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    ,<script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
 
@@ -19,17 +24,52 @@
     
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">News & Events</a></li>
-            <li><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     
     <main>
 
-        <h1>My nose itches</h1>
-        <p>For the last 3 minutes, my nose has been itching.</p>
+        <h1>Home</h1>
+
+        <section id="about-me" class="card">
+            <h2>About Me</h2>
+            <p>Lennie Lee Carver is uhh... very cool. Trust me. They've been coding ever since they've been obsessed with Undertale, a video game made by Toby Fox. They also started writing stories ever since that "Special Interest" started 10 years ago.</p>
+            <p>They're from rural Utah but dream of living anywhere else. They've been learning Japanese, Spanish, and even some <i>British English</i>. For some odd reason, they feel incredibly drawn to Pennsylvania and have a heart attack whenever they meet someone from that state...</p>
+            <p>In terms of hobbies, they have too many. Some are quite scary. Let's stick to the normal ones. Crocheting, cooking, writing, drawing, listening to music, and looking up places to live. Oh, and coding.</p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/lennie.jpg" alt="photo of Lennie">
+        </section>
+        
+        <section id="courses" class="card">
+            <h2>Web and Computer Programming Certificate</h2>
+            <button id="all">All Courses</button>
+            <button id="wdd">WDD Courses</button>
+            <button id="cse">CSE Courses</button>
+            <p><br>The total number of courses listed below is <span id="num-credits">0</span>.<br></p>
+
+            <div id="course-grid">
+
+            </div>
+
+        </section>
 
     </main>
+
+    <footer>
+        <div id="footer-img">
+            <a href="https://www.linkedin.com/in/kara-carver-090ba2211/"><img src="images/linkedin.svg" alt="linkedin"></a>
+            <a href="https://github.com/masonleecarver"><img src="images/github.svg" alt="github"></a>
+            <a href="https://discord.gg/hhJqfSNvmq"><img src="images/discord.svg" alt="discord"></a>
+        </div>
+        <span id="current-year"></span> Lennie Lee Carver | Utah<br>
+        <span id="last-modified"></span>
+    </footer>
+
 </body>
 </html>

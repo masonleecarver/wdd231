@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #ebc070;
+    text-align: center;
+    padding: 30px;
+    font-size: 2em;
+    color:#492a04
+
+}
+
+body {
+
+    background-color: #f5eedc;
+}
+
+.card {
+
+    margin: 20px auto;
+    background-color: bisque;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 500px;
+    
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color:rgb(47, 47, 122);
+    font-size: 1.8em;
+}
+
+.card p {
+    padding: 5px;
+    color: #492a04;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-gap: 30px; */
+    }
+
+    .card {
+
+        min-width: 450px;
+    }
+}

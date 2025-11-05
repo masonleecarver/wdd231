@@ -18,6 +18,17 @@ body {
     background-color: #f5eedc;
 }
 
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr))
+}
+
+.card {
+
+     min-width: 450px;
+}
+
 .card {
 
     margin: 20px auto;
@@ -39,19 +50,4 @@ body {
 .card p {
     padding: 5px;
     color: #492a04;
-}
-
-
-@media screen and (min-width: 1200px) {
-
-    #cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 30px; */
-    }
-
-    .card {
-
-        min-width: 450px;
-    }
 }

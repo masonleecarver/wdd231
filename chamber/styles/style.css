@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bear-lake.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 40px;
+    padding: 10px;
+    background-color: #6a946a;
+    color: rgb(0, 0, 0);
+}
+
+header h1 {
+    font-family: "Gravitas One";
+}
+
+header img {
+    height: 44px;
+    width: auto;
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+.navigation {
+    display: none;
+    font-family: 'Macondo';
+    background-color: #6a946a;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color:#ffffff;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+
+}
+
+#nav-bar a:hover {
+    background-color: #a4ca8b;
+}
+
+.hamburger {
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2b0e2b;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2em;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+h1 {
+
+    color:#ffffff;
+    font-family: "Gravitas One";
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.card {
+
+    display: block;
+    margin: 20px 0;
+    border: 3px solid black;
+    background-color: #6a946a;
+
+}
+
+.card h2 {
+
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 10px 15px 10px 5px;
+    font-family: "Gravitas One";
+
+}
+
+#current img {
+    width: 44px;
+    display: inline;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 30px;
+    background-color: #6a946a;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+    font-family: "Macondo";
+    align-items: center;
+    justify-items: center;
+}
+
+footer img {
+
+    height: 44px;
+    width: auto;
+    padding: 0 5px;
+}
+
+@media screen and (min-width: 900px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 44px auto 300px;
+    }
+    
+    #nav-bar {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .navigation {
+        display: inline-block;
+        align-self: center;
+    }
+    
+    .navigation ul {
+        display: flex;
+    }
+    
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+        background-color: none;
+        color: #082852;
+    }
+
+    .card {
+        display: inline-block;
+    }
+
+    .stuff {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+
+}

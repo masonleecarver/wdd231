@@ -1,0 +1,62 @@
+{
+    "companies": [
+        {
+            "name": "Dee's Super Service",
+            "address": "20 N Bear Lake Blvd",
+            "phone-number": "(435) 964-3372",
+            "web-url": "https://www.deessuperservice.com/",
+            "imageurl": "images/dees-logo.png",
+            "owner-name": "Dennis Hodges"
+        },
+        {
+            "name": "Steve's Performance and Small Engine Repair Shop",
+            "address": "60 N Bear Lake Blvd",
+            "phone-number": "(435) 757-6581",
+            "web-url": "none",
+            "imageurl": "images/steves.webp",
+            "owner-name": "Steve Willis"
+        },
+        {
+            "name": "Gomez Welding & Fabrication",
+            "address": "341 N 200 E",
+            "phone-number": "(435) 770-3518",
+            "web-url": "http://www.gomezwelding.com/",
+            "imageurl": "images/gomez-logo.png",
+            "owner-name": "Cody Gomez"
+        },
+        {
+            "name": "Delmas Equipment Services",
+            "address": "65 N Bear Lake Blvd",
+            "phone-number": "(435) 757-8238",
+            "web-url": "https://www.delmasforks.com/",
+            "imageurl": "images/delmas-logo.avif",
+            "owner-name": "Eric Wamsley"
+        },
+        {
+            "name": "Some Beaches",
+            "address": "21 N Bear Lake Blvd",
+            "phone-number": "(435) 535-1703",
+            "web-url": "https://somebeachesfood.com/menu/",
+            "imageurl": "images/some-beaches-logo.png",
+            "owner-name": "Patric Floyd"
+        },
+        {
+            "name": "Rendezvous Beach Bear Lake",
+            "address": "South shore near Laketown on UT SR 30",
+            "phone-number": "(435) 946-3343",
+            "web-url": "https://bearlake.org/item/bear-lake-state-park-rendezvous-beach/",
+            "imageurl": "images/beach.jpeg",
+            "owner-name": "State of Utah"
+        },
+        {
+            "name": "Q Bar S Custom Meats",
+            "address": "1243 Falula Rd",
+            "phone-number": "(435) 999-3593",
+            "web-url": "none",
+            "imageurl": "images/meat.webp",
+            "owner-name": "Quinton Siddoway"
+        }     
+
+
+    ]
+}

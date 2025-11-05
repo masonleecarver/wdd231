@@ -8,11 +8,98 @@
     <meta property="og:title" content="Laketown Chamber of Commerce">
     <meta property="og:description" content="Discover all about what's going down in Laketown, Utah. Garden City's more quiet cousin.">
     <meta property="og:image" content="images/church.jpeg">
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="https://masonleecarver.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Gravitas+One&family=Ultra&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <title>Laketown Chamber of Commcerce</title>
 </head>
 <body>
+    <header>
+        <img src="images/logo.svg" alt="logo" width="1px" height="1px">
+        <h1>Laketown Chamber of Commerce</h1>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+        <nav class="navigation" id="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    <main>
+        <section class="hero">
+            <img src="images/laketown-sign.webp" alt="hero image" class="hero-img">
+        </section>
+
+        <h1>Home</h1>
+
+        <div class="stuff">
+            <section class="card">
+                <h2>Events</h2>
+                <span id="events"></span>
+            </section>
+
+            <section id="current" class="card">
+                <h2>Current Weather</h2>
+                <img src="images/weather.svg" alt="weather icon">
+                <span id="weather"></span>
+            </section>
+
+            <section class="card">
+                <h2>Weather Forcast</h2>
+                <span id="today-weather"></span>
+                <span id="tmr-weather"></span>
+                <span id="tmr-tmr-weather"></span>
+            </section>
+        </div>
+
+
+        <div class="business-cards">
+
+
+        </div>
+
+        
+    </main>
     
+    <footer>
+        <p>
+            Laketown Chamber of Commerce<br>
+            10 N 200 E<br>
+            Laketown, Utah 84038<br>
+            clerk@laketownutah.com<br>
+            (435) 946-9000
+            </p>
+                
+        <div class="socials">
+            <a href="https://www.facebook.com/share/g/1A9d23fUs3/"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://www.youtube.com/@bearlakekoa5094"><img src="images/youtube.svg" alt="youtube"></a>
+            <a href="https://www.linkedin.com/in/kara-carver-090ba2211/"><img src="images/linkedin.svg" alt="linkedin"></a>
+        </div>
+    
+        <p>
+            WDD231 Class Project<br>
+            Lennie Lee Carver<br>
+            <span id="current-year"></span> Laketown Chamber of Commerce<br>
+            <span id="last-modified"></span>
+        </p>
+                
+    
+    </footer>
 </body>
 </html>

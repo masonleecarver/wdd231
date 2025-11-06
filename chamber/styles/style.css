@@ -80,11 +80,11 @@ header img {
 }
 
 main {
-    width: 80vw;
+    width: 95vw;
     margin: 0 auto;
 }
 
-h1 {
+h2 {
 
     color:#ffffff;
     font-family: "Gravitas One";
@@ -127,7 +127,7 @@ h1 {
 
 .menu button {
 
-    padding: 20px 40px;
+    padding: 10px 30px;
     border-radius: 20px;
     font-size: 2em;
     font-family: "Macondo";
@@ -149,8 +149,9 @@ h1 {
 
     display: flex;
     flex-direction: column;
+}
 
-    .b-card {
+ .list .b-card {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0;
@@ -171,7 +172,7 @@ h1 {
         background-color: #6a9494;
     }
 }
-}
+
 
 .b-card {
 
@@ -225,6 +226,11 @@ footer img {
     header {
         display: grid;
         grid-template-columns: 44px auto 300px;
+    }
+
+    main {
+        width: 80vw;
+        margin: 0 auto;
     }
     
     #nav-bar {

@@ -13,7 +13,7 @@
             "address": "60 N Bear Lake Blvd",
             "phone-number": "(435) 757-6581",
             "web-url": "none",
-            "imageurl": "images/steves.webp",
+            "imageurl": "images/steves.jpg",
             "owner-name": "Steve Willis"
         },
         {
@@ -53,9 +53,17 @@
             "address": "1243 Falula Rd",
             "phone-number": "(435) 999-3593",
             "web-url": "none",
-            "imageurl": "images/meat.webp",
+            "imageurl": "images/q-bar.jpg",
             "owner-name": "Quinton Siddoway"
-        }     
+        },
+        {
+            "name": "Lennie Lee Carver",
+            "address": "Yes I will say I have a business",
+            "phone-number": "(801) 558-1461",
+            "web-url": "../index.html",
+            "imageurl": "images/lennie.png",
+            "owner-name": "Lennie Carver"
+        }
 
 
     ]

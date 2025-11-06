@@ -136,6 +136,12 @@ h2 {
     cursor: pointer;
 }
 
+.b-card h2 {
+
+    color: #082852;
+    font-family: "Macondo";
+}
+
 .grid {
 
     display: grid;
@@ -159,19 +165,16 @@ h2 {
         width: 100%;
         align-items: center;
         justify-items: center;
+ }
 
-    & > * {
-        margin: 0 1rem;
-    }
-
-    img {
+.list .b-card img {
         display: none;
-    }
-
-    &:nth-child(even) {
-        background-color: #6a9494;
-    }
 }
+
+.list .b-card:nth-child(even) {
+        background-color: #6a9494;
+}
+
 
 
 .b-card {

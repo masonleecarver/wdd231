@@ -16,11 +16,13 @@ header {
     column-gap: 40px;
     padding: 10px;
     background-color: #6a946a;
-    color: rgb(0, 0, 0);
+    color: #fff;
+    width: 100vw;
 }
 
 header h1 {
     font-family: "Gravitas One";
+    font-size: 1.5em;
 }
 
 header img {
@@ -145,7 +147,7 @@ h2 {
 .grid {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1fr 1fr));
     grid-gap: 10px;
     align-items: center;
     justify-items: center;
@@ -182,11 +184,12 @@ h2 {
     background-color: #8bc1ca;
     border: 3px solid #082852;
     border-radius: 5px;
-    width: 400px;
+    width: 80%;
     text-align: center;
     padding: 10px;
     color: #082852;
     font-family: "Macondo";
+    justify-self: center;
 
 }
 
@@ -275,6 +278,16 @@ footer img {
         flex-direction: row;
         justify-content: space-around;
         text-align: left;
+    }
+
+    .grid .b-card {
+
+        width: 400px;
+    }
+
+    .grid {
+
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
 

@@ -1,8 +1,3 @@
-const grid = document.querySelector("#businesses");
-
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
-
 async function returnBusinesses() {
     const response = await fetch("data/members.json");
     const data = await response.json();
@@ -14,6 +9,13 @@ async function returnBusinesses() {
 async function makeCards() {
 
     let companies = await returnBusinesses();
+
+    company1 = companies[Math.floor(Math.random()*companies.length)];
+    company2 = companies[Math.floor(Math.random()*companies.length)];
+
+    companies = [company1, company2];
+
+    let grid = document.querySelector("#company-spotlight");
 
     companies.forEach(company => {
 
@@ -57,13 +59,3 @@ async function makeCards() {
 }
 
 makeCards();
-
-gridButton.addEventListener('click', () => {
-    grid.classList.add("grid");
-    grid.classList.remove("list");
-});
-
-listButton.addEventListener('click', () => {
-    grid.classList.add("list");
-    grid.classList.remove("grid");
-});

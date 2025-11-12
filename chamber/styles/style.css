@@ -344,6 +344,11 @@ footer img {
     #events {
 
         grid-column: 1/3;
+        width: 1000%;
+    }
+
+    #current, #forecast {
+        grid-row: 2/3;
     }
 
     footer {

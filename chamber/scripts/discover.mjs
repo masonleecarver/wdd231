@@ -16,6 +16,7 @@ areas.forEach(area => {
     const img = document.createElement("img");
     img.setAttribute("src", area.imageurl);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("alt", `A photo of ${area.name}`);
     figure.appendChild(img);
 
 

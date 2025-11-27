@@ -50,23 +50,23 @@
 
         <div id="join-page">
 
-            <form action="thanks.html" method="get">
+            <form action="thankyou.html" method="get">
 
                 <fieldset>
                     <legend>About You!</legend>
 
-                    <label>First Name: <input type="text" id="first" name="first" autocomplete="given-name" required></label>
-                    <label>Last Name: <input type="text" id="last" name="last" autocomplete="family-name" required></label>
-                    <label>Email: <input type="email" id="email" name="email" autocomplete="email" required></label>
-                    <label>Phone: <input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
+                    <label>First Name: <input type="text" id="first" name="first" title="first" autocomplete="given-name" required></label>
+                    <label>Last Name: <input type="text" id="last" name="last" title="last" autocomplete="family-name" required></label>
+                    <label>Email: <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="name@example.com" required></label>
+                    <label>Phone: <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required></label>
                 </fieldset>
                 
                 <fieldset>
                     <legend>About Your Business!</legend>
                     
-                    <label>Organizational Title: <input type="text" id="title" name="title" autocomplete="organization-title"></label>
-                    <label>Organization Name: <input type="text" id="bus-name" name="bus-name" autocomplete="organization"></label>
-                    <label>Organization Description: <textarea id="desc" name="desc"></textarea></label>
+                    <label>Organizational Title: <input type="text" id="title" name="title" title="title" autocomplete="organization-title" required></label>
+                    <label>Organization Name: <input type="text" id="bus-name" name="bus-name" title="bus-name" autocomplete="organization"></label>
+                    <label>Organization Description: <textarea id="desc" name="desc" title="desc"></textarea></label>
 
 
                 </fieldset>

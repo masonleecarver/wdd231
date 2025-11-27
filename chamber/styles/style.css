@@ -386,6 +386,54 @@ form button {
 
 }
 
+#welcome-message {
+
+    font-family: "Macondo";
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2em;
+
+}
+
+#poi-cards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    margin: 50px 0;
+
+}
+
+.card button {
+
+    font-family: "Macondo";
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #082852;
+    color: #fff;
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+
+.card button:hover {
+
+    background-color: #a4ca8b;
+    color:#082852;
+
+}
+
+.card figure img {
+
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid #082852 2px;
+
+}
+
 footer {
     display: flex;
     flex-direction: column;

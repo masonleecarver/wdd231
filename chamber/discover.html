@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lennie Lee Carver">
+    <meta name="description" content="All about what's going down in Laketown, Utah. Garden City's more quiet cousin.">
+    <meta property="og:title" content="Discover">
+    <meta property="og:description" content="Discover all about what's going down in Laketown, Utah. Garden City's more quiet cousin.">
+    <meta property="og:image" content="https://masonleecarver.github.io/wdd231/chamber/images/welcome-to-laketown.jpg">
+    <meta property="og:url" content="https://masonleecarver.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -11,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Gravitas+One&family=Ultra&display=swap" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/thanks.js" defer></script>
-    <title>Thanks! | Laketown Chamber of Commerce</title>
+    <script src="scripts/discover.mjs" type="module" defer></script>
+    <title>Discover | Laketown Chamber of Commerce</title>
 </head>
 <body>
     <header>
@@ -24,7 +30,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a class="chosen" href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -33,19 +39,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a class="chosen" href="#">Discover</a></li>
             </ul>
         </nav>
-
     <main>
+        <h2 class="normhead">Discover Laketown</h2>
+        
+        <p id="welcome-message"></p>
 
-        <h2 class="normhead">Success!</h2>
+        <div id="poi-cards">
 
-        <section id="form-deets"></section>
 
-        <a id="cta" href="index.html">Go Back Home</a>
+        </div>
 
     </main>
+
 
     <footer>
         <p>
@@ -69,6 +77,7 @@
             <span id="last-modified"></span>
         </p>
                 
+    
     </footer>
 </body>
 </html>

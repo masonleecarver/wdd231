@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lennie Lee Carver">
+    <meta name="description" content="Join the Laketown Chamber of Commerce, and be informed about all that's going down in our sleepy town.">
+    <meta property="og:title" content="Join">
+    <meta property="og:description" content="Join the Laketown Chamber of Commerce, and be informed about all that's going down in our sleepy town.">
+    <meta property="og:image" content="https://masonleecarver.github.io/wdd231/chamber/images/welcome-to-laketown.jpg">
+    <meta property="og:url" content="https://masonleecarver.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Gravitas+One&family=Ultra&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+    <title>Join Us</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="a house with a heart in it" width="1" height="1">
+        <h1>Laketown Chamber of Commerce</h1>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="chosen" href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+        <nav class="navigation" id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a class="chosen" href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    <main>
+
+        <h2 class="normhead">Join Us</h2>
+
+
+        <div id="join-page">
+
+            <form action="thanks.html" method="get">
+
+                <fieldset>
+                    <legend>About You!</legend>
+
+                    <label>First Name: <input type="text" id="first" name="first" autocomplete="first-name" required></label>
+                    <label>Last Name: <input type="text" id="last" name="last" autocomplete="family-name" required></label>
+                    <label>Email: <input type="email" id="email" name="email" autocomplete="email" required></label>
+                    <label>Phone: <input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>About Your Business!</legend>
+                    
+                    <label>Organizational Title: <input type="text" id="title" name="title" autocomplete="organization-title"></label>
+                    <label>Organization Name: <input type="text" id="bus-name" name="bus-name" autocomplete="organization"></label>
+                    <label>Organization Description: <textarea id="desc" name="desc"></textarea></label>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Membership</legend>
+
+                    <div class="membership-radio">
+                        <label><input type="radio" name="mem-level" value="np" required>NP</label>
+                        <label><input type="radio" name="mem-level" value="bronze" required>Bronze</label>
+                        <label><input type="radio" name="mem-level" value="silver" required>Silver</label>
+                        <label><input type="radio" name="mem-level" value="gold" required>Gold</label>
+                    </div>
+
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="time">
+
+
+                <button type="submit" id="submit">Get Bombarded With Emails</button>
+
+            </form>
+
+            <div id="membership-cards">
+                
+                <section class="card" id="npCard">
+                    <h2>Non Profit</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>1x Chance to be on the spotlight</li>
+                        <li>Emails once a month</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                </section>
+                
+                <section class="card" id="bronzeCard">
+                    <h2>Bronze</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>2x Chance to be on the spotlight</li>
+                        <li>Emails twice a month</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                </section>
+
+                <section class="card" id="silverCard">
+                    <h2>Silver</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>5x Chance to be on the spotlight</li>
+                        <li>Emails once a week</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                </section>
+
+                <section class="card" id="goldCard">
+                    <h2>Gold</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>10x Chance to be on the spotlight</li>
+                        <li>YOU CAN'T ESCAPE ME!!!</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </div>
+
+        <div class="join-modals">
+
+            <dialog id="np-modal">
+                <button id="np-close">X</button>
+                <h2>Non Profit</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>1x Chance to be on the spotlight</li>
+                        <li>Emails once a month</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                    <p>This is an excellent choice if you are looking for something simple, and you're not looking to be way too invested in our town. Though I'll be disappointed that you aren't taking more interest in our town, I understand. I won't be outside your window. I'll unplug my survielence system.</p>
+            </dialog>
+            
+            <dialog id="bronze-modal">
+                <button id="bronze-close">X</button>
+                <h2>Bronze</h2>
+                <p>Benefits:</p>
+                <ul>
+                    <li>2x Chance to be on the spotlight</li>
+                    <li>Emails twice a month</li>
+                    <li>I love you ♡</li>
+                    </ul>
+                    <p>This is the best option, I think. Most people who get third place are the happiest because they just barely made the podium and history will rememeber their name. Emails twice a month is good. I get good ideas about twice a month.</p>
+            </dialog>
+
+            <dialog id="silver-modal">
+                <button id="silver-close">X</button>
+                <h2>Silver</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>5x Chance to be on the spotlight</li>
+                        <li>Emails once a week</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                    <p>Aww.. flirting, are you? I'll oblige... you have beautiful eyes, and you are extremely strong and independant for making it this far in life. I'm so proud of you! You'll go far and I'd love to see you get there. That's why I have a ton of cameras outside your house!</p>
+            </dialog>
+
+            <dialog id="gold-modal">
+                <button id="gold-close">X</button>
+                <h2>Gold</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>10x Chance to be on the spotlight</li>
+                        <li>YOU CAN'T ESCAPE ME!!!</li>
+                        <li>I love you ♡</li>
+                    </ul>
+                    <p>WOW! GOLD! Why don't you ask for my number already??? You'll make me blush. Teehee!!</p>
+            </dialog>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            Laketown Chamber of Commerce<br>
+            10 N 200 E<br>
+            Laketown, Utah 84038<br>
+            clerk@laketownutah.com<br>
+            (435) 946-9000
+            </p>
+                
+        <div class="socials">
+            <a href="https://www.facebook.com/share/g/1A9d23fUs3/"><img src="images/facebook.svg" alt="facebook icon"></a>
+            <a href="https://www.youtube.com/@bearlakekoa5094"><img src="images/youtube.svg" alt="youtube icon"></a>
+            <a href="https://www.linkedin.com/in/kara-carver-090ba2211/"><img src="images/linkedin.svg" alt="linkedin icon"></a>
+        </div>
+    
+        <p>
+            WDD231 Class Project<br>
+            Lennie Lee Carver<br>
+            <span id="current-year"></span> Laketown Chamber of Commerce<br>
+            <span id="last-modified"></span>
+        </p>
+                
+    </footer>
+</body>
+</html>

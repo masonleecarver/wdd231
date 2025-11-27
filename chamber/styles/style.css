@@ -66,6 +66,11 @@ header img {
 
 }
 
+nav a.chosen {
+
+    border-bottom: 2px solid #082852;
+}
+
 #nav-bar a:hover {
     background-color: #a4ca8b;
 }
@@ -147,7 +152,7 @@ h2 {
 
 }
 
-.card h2 {
+.card h2, dialog h2 {
 
     background-color: black;
     color: white;
@@ -163,15 +168,48 @@ h2 {
     display: inline;   
 }
 
-.stuff .card p {
+.card p, .card li, dialog p, dialog li {
     font-family: 'Macondo';
     padding: 5px;
     font-size: 1.2em;
 }
 
-.stuff .card {
+.card ul, dialog ul {
+    list-style-type: none;
+}
+
+.card li::before, .card li::after {
+
+    content: "☆";
+}
+
+.card {
 
     text-align: center;
+}
+
+dialog {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  border: 3px solid #fff;
+    background-color: #6a946a;
+  margin: auto auto;
+  max-width: 300px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+
+    position: absolute;
+    background: none;
+    border: none;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #fff;
 }
 
 .menu {
@@ -266,7 +304,87 @@ h2 {
     padding: 10px 0;
 }
 
+form label {
+    display: block;
+    padding: .25rem;
+    font-family: "Macondo";
+    color: #fff;
+}
 
+fieldset {
+    background-color: #6a9494;
+    margin: 20px auto;
+    border:#082852 5px solid;
+    box-shadow: 0 0 3rem #082852;
+    max-width: 600px;
+}
+
+form input[type="text"], input[type="email"], input[type="tel"], textarea {
+
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+form input:required {
+
+    border-left: red 5px solid;
+}
+
+form legend {
+
+    font-family: "Macondo";
+    font-size: 1.5em;
+    padding: 0px 10px;
+    color: #fff;
+}
+
+form input[type="radio"] {
+
+    margin-right: 5px;
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Macondo";
+    font-size: 1.2em;
+    border:#082852 5px solid;
+    box-shadow: 0 0 3rem #082852;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#form-deets {
+
+    display: block;
+    margin: 100px auto;
+    width: 350px;
+    text-align: center;
+    background-color: #a4ca8b;
+    padding: 20px;
+    border:#082852 solid 5px;
+    font-family: "Macondo";
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#form-deets p {
+
+    padding: 10px;
+}
+
+#membership-cards {
+
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 300px;
+
+
+}
 
 footer {
     display: flex;
@@ -372,6 +490,11 @@ footer img {
 
         grid-template-columns: 1fr 1fr;
         margin: 50px 0 100px 0;
+    }
+
+    #join-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
 
 

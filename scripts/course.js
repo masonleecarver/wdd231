@@ -2,6 +2,7 @@ const credits = document.getElementById("num-credits");
 const allButt = document.getElementById("all");
 const wddButt = document.getElementById("wdd");
 const cseButt = document.getElementById("cse");
+const courseDetails = document.querySelector("#course-modal");
 
 const courses = [
     {
@@ -109,11 +110,13 @@ function addClasses(courseList) {
         else { 
             courseCard.classList.add("complete", "course-card");
         };
-
         
         courseCard.appendChild(courseTitle);
         courseCard.appendChild(courseName);
         
+        courseCard.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         courseGrid.appendChild(courseCard);
         
@@ -139,3 +142,21 @@ const cseList = courses.filter(course => course.subject === "CSE");
 cseButt.addEventListener('click', () => {
     addClasses(cseList);
 });
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p`;
+
+    courseDetails.showModal();
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}

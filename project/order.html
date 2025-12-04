@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
     <title>Order | Lennie's Commission Info</title>
 </head>
 <body>
@@ -96,19 +97,19 @@
 
             <div id="remind-cards">
 
-                <section class="art-card card">
+                <section class="art-card" id="portrait">
                     <h2>Portrait</h2>
                     <img src="images/Leroy.png" alt="portrait of leroy" loading="lazy">
                     <p>Price: $5-$15</p>
                 </section>
 
-                <section class="art-card card">
+                <section class="art-card" id="half">
                     <h2>Half Body</h2>
                     <img src="images/Larue.png" alt="half body drawing of larue" loading="lazy">
                     <p>Price: $7-$20</p>
                 </section>
 
-                <section class="art-card card">
+                <section class="art-card" id="full">
                     <h2>Full Body</h2>
                     <img src="images/Child.png" alt="full body drawing of lewis" loading="lazy">
                     <p>Price: $10-$25</p>
@@ -116,6 +117,42 @@
             </div>
 
         </div>
+
+         <dialog id="por-m">
+                <button id="p-close">X</button>
+                <h2>Portraits</h2>
+                    <p>Prices:</p>
+                    <ul>
+                        <li>Sketch: $5</li>
+                        <li>Base Color: $10</li>
+                        <li>Rendered: $15</li>
+                    </ul>
+                    <p>I love drawing portraits, as I feel it's a good way to get a feel for the character. They can be so expressive and you can get a lot of detail of the character's face, which is where most of the distingusting features are 9/10 times.</p>
+            </dialog>
+            
+            <dialog id="half-m">
+                <button id="h-close">X</button>
+                <h2>Half Bodies</h2>
+                <p>Prices:</p>
+                    <ul>
+                        <li>Sketch: $7</li>
+                        <li>Base Color: $13</li>
+                        <li>Rendered: $20</li>
+                    </ul>
+                    <p>Half bodies are my favorites to do, if I'm being honest. They allow for more movement in the body and let me draw more of the character. I don't like drawing feet and this gets me out of doing that. Heehee.</p>
+            </dialog>
+
+            <dialog id="full-m">
+                <button id="f-close">X</button>
+                <h2>Full Bodies</h2>
+                    <p>Prices:</p>
+                    <ul>
+                        <li>Sketch: $10</li>
+                        <li>Base Color: $18</li>
+                        <li>Rendered: $25</li>
+                    </ul>
+                    <p>AAAAAAAAAAHHHHHHHHH. Thank you for your money.</p>
+            </dialog>
     </main>
         <footer>
         <p>

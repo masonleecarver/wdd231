@@ -38,7 +38,10 @@ export const artwork = [
         imageurl: "images/Commission/Ew.jpg",
         price: "$17.50",
         title: "Ew"
-    },
+    }
+]
+
+export const extraArt = [
     {
         imageurl: "images/Commission/Friends.png",
         price: "$48.75",

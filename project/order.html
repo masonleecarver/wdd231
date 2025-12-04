@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lennie Lee Carver">
+    <meta name="description" content="Affordable and adorable commissions">
+    <meta property="og:title" content="Order | Lennie's Commissions">
+    <meta property="og:description" content="Afforable and adorable commissions">
+    <meta property="og:image" content="https://masonleecarver.github.io/wdd231/project/images/mask-lament.webp">
+    <meta property="og:url" content="https://masonleecarver.github.io/wdd231/project/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Mogra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <title>Order | Lennie's Commission Info</title>
+</head>
+<body>
+    <header>
+    <img src="images/logo.svg" alt="a pallette" width="1" height="1">
+        <h1>Lennie's Commisions</h1>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="chosen" href="order.html">Order</a></li>
+                <li><a href="discover.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+        <nav class="navigation" id="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="chosen" href="order.html">Order</a></li>
+                <li><a href="discover.html">About Me</a></li>
+            </ul>
+        </nav>
+
+    <main>    
+        <div id="order-page">
+
+            <form action="thankyou.html" method="get">
+
+                <fieldset>
+                    <legend>About You!</legend>
+
+                    <label>First Name: <input type="text" id="first" name="first" title="first" autocomplete="given-name" required></label>
+                    <label>Last Name: <input type="text" id="last" name="last" title="last" autocomplete="family-name" required></label>
+                    <label>Email: <input type="email" id="email" name="email" title="email" autocomplete="email" placeholder="name@example.com" required></label>
+                    <label>Phone: <input type="tel" id="phone" name="phone" title="phone" autocomplete="tel" required></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>About Your Commission!</legend>
+                    
+                    <div class="size-radio">
+                        <h2>Size</h2>
+                        <label><input type="radio" name="size" value="portrait" required>Portrait</label>
+                        <label><input type="radio" name="size" value="half-body" required>Half Body</label>
+                        <label><input type="radio" name="size" value="full-body" required>Full Body</label>
+                        <label><input type="radio" name="size" value="deisgn" required>Character Deisgn</label>
+                    </div>
+                    
+                    <div class="state-radio">
+                        <h2>State</h2>
+                        <label><input type="radio" name="state" value="sketch" required>Sketch</label>
+                        <label><input type="radio" name="state" value="base-color" required>Base Color</label>
+                        <label><input type="radio" name="state" value="rendered" required>Rendered</label>
+                    </div>
+
+                    <label>Description: <textarea id="desc" name="desc" title="desc" required></textarea></label>
+                    
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Payment</legend>
+
+                    <div class="payment">
+                        <label><input type="radio" name="payment" value="paypal" required>Paypal</label>
+                        <label><input type="radio" name="payment" value="venmo" required>Venmo</label>
+                    </div>
+
+                    <label>Username<input type="text" id="username" name="username" title="username" autocomplete="username" required placeholder="@yourname"></label>
+
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="time">
+
+
+                <button type="submit" id="submit">Place My Order</button>
+
+            </form>
+
+            <div id="remind-cards">
+
+                <section class="art-card card">
+                    <h2>Portrait</h2>
+                    <img src="images/Leroy.png" alt="portrait of leroy" loading="lazy">
+                    <p>Price: $5-$15</p>
+                </section>
+
+                <section class="art-card card">
+                    <h2>Half Body</h2>
+                    <img src="images/Larue.png" alt="half body drawing of larue" loading="lazy">
+                    <p>Price: $7-$20</p>
+                </section>
+
+                <section class="art-card card">
+                    <h2>Full Body</h2>
+                    <img src="images/Child.png" alt="full body drawing of lewis" loading="lazy">
+                    <p>Price: $10-$25</p>
+                </section>
+            </div>
+
+        </div>
+    </main>
+        <footer>
+        <p>
+            Lennie's Commissions<br>
+            peanutbutter.bread.jam@gmail.com<br>
+            (801) 558-1461
+            </p>
+                
+        <div class="socials">
+            <a href="https://discord.gg/hhJqfSNvmq"><img src="images/discord.svg" alt="discord icon"></a>
+            <a href="https://www.youtube.com/@futzilee"><img src="images/youtube.svg" alt="youtube icon"></a>
+            <a href="https://www.linkedin.com/in/kara-carver-090ba2211/"><img src="images/linkedin.svg" alt="linkedin icon"></a>
+        </div>
+    
+        <p>
+            <span id="current-year"></span> Lennie Lee Carver<br>
+            <span id="last-modified"></span>
+        </p>
+                
+    
+    </footer>
+</body>

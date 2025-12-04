@@ -7,6 +7,14 @@ const tos = document.querySelector("#tos");
 const pricesbutton = document.querySelector("#prices-button");
 const prices = document.querySelector("#prices");
 
+const year = document.getElementById("current-year");
+
+const date = new Date();
+
+year.textContent = `\u00A9 ${date.getFullYear()}`;
+
+document.getElementById("last-modified").innerHTML = `Last modified on ${document.lastModified}`;
+
 navbutton.addEventListener('click', () => {
     navbutton.classList.toggle('show');
     navbar.classList.toggle('open');
@@ -20,11 +28,3 @@ tosbutton.addEventListener('click', () => {
 pricesbutton.addEventListener('click', () => {
     prices.classList.toggle('open');
 })
-
-const year = document.getElementById("current-year");
-
-const date = new Date();
-
-year.textContent = `\u00A9 ${date.getFullYear()}`;
-
-document.getElementById("last-modified").innerHTML = `Last modified on ${document.lastModified}`;

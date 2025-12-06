@@ -21,7 +21,10 @@ function createArt(artList) {
     
         const img = document.createElement("img");
         img.setAttribute("src", art.imageurl);
-        img.setAttribute("loading", "lazy");
+        if (art.imageurl !== "images/Commission/Author_sketch.webp") {
+
+            img.setAttribute("loading", "lazy");
+        }
         img.setAttribute("alt", art.title);
         img.setAttribute("title", art.title);
     

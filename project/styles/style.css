@@ -116,6 +116,7 @@ body {
     background-image: url("../images/milky-way.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 main {

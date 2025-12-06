@@ -1,3 +1,13 @@
+(function(){
+            emailjs.init({
+                publicKey: "vwNa7T9khdJami_rz",
+                limitRate: {
+                    id: 'app',
+                    throttle: 10000,
+                },
+            });
+        })();
+
 async function sendMail(event) {
 
   event.preventDefault();

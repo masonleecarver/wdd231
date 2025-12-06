@@ -2,11 +2,6 @@ const navbutton = document.querySelector("#nav-button");
 
 const navbar = document.querySelector("#nav-bar");
 
-const tosbutton = document.querySelector("#tos-button");
-const tos = document.querySelector("#tos");
-const pricesbutton = document.querySelector("#prices-button");
-const prices = document.querySelector("#prices");
-
 const year = document.getElementById("current-year");
 
 const date = new Date();
@@ -20,11 +15,3 @@ navbutton.addEventListener('click', () => {
     navbar.classList.toggle('open');
 
 });
-
-tosbutton.addEventListener('click', () => {
-    tos.classList.toggle('open');
-})
-
-pricesbutton.addEventListener('click', () => {
-    prices.classList.toggle('open');
-})

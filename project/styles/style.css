@@ -57,6 +57,7 @@ header img {
 
 #tos li, #prices li {
     margin-bottom: 8px;
+    font-size: 1.2em;
 }
 
 .navigation.open, #tos.open, #prices.open {
@@ -78,9 +79,15 @@ header img {
 
 }
 
-nav a.chosen {
+a.chosen {
 
     border-bottom: 2px solid var(--my-dark-blue);
+}
+
+a.chosen::before, a.chosen::after {
+    content: " ♡ ";
+    font-weight: bold;
+    color: var(--my-dark-blue);
 }
 
 #nav-bar a:hover {
@@ -106,7 +113,7 @@ nav a.chosen {
 }
 
 body {
-    background-image: url("../images/milky-way.jpg");
+    background-image: url("../images/milky-way.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -120,6 +127,7 @@ main {
     margin-top: 50px;
     border: 5px solid #A9DEF9;
     border-radius: 20px;
+    color: var(--my-blue)
 }
 
 main h1{
@@ -135,11 +143,13 @@ main h1{
 #tos-button, #prices-button, .more {
     display: inline;
     border: none;
-    padding: 20px;
+    padding: 5px 20px;
     font-family: "Macondo";
     font-size: 1.5em;
     cursor: pointer;
-    background-color: #e4c1f9;
+    background-color: var(--my-blue);
+    margin: 10px 0;
+    border-radius: 10px;
 }
 
 .more.hidden {
@@ -189,6 +199,7 @@ form input[type="text"], input[type="email"], input[type="tel"], textarea {
 form input:required, textarea {
 
     border-left: var(--my-pink) 5px solid;
+    font-family: "Macondo";
 }
 
 form legend {
@@ -312,7 +323,13 @@ form button {
     padding: 40px;
     justify-items: center;
     align-items: center;
+    column-gap: 20px;
 
+}
+
+.opener img {
+    width: 100%;
+    max-width: 400px;
 }
 
 .hero {
@@ -335,7 +352,7 @@ form button {
     color: #fff;
     border: 5px solid var(--my-pink);
     border-radius: 10px;
-    width: 50%;
+    width: 90%;
     margin: 40px auto;
     gap: 5px;
     padding: 20px;
@@ -375,7 +392,7 @@ footer img {
     padding: 0 5px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
 
     header {
         display: grid;
@@ -415,7 +432,6 @@ footer img {
 
     #tos, #prices {
         display: block;
-        background-color: #e4c1f9;
     }
 
     .interest {
@@ -431,6 +447,11 @@ footer img {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        font-size: 1.2em;
+    }
+
+    .card img {
+        width: 100%;
     }
 
     #order-page {
@@ -439,6 +460,10 @@ footer img {
         grid-template-columns: 2fr 1fr;
         align-items: center;
 
+    }
+
+    .card {
+        width: 60%;
     }
 
     footer {

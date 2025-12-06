@@ -12,10 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Mogra&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/timestamp.js" defer></script>
     <script src="scripts/modals.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "vwNa7T9khdJami_rz",
+                limitRate: {
+                    id: 'app',
+                    throttle: 10000,
+                },
+            });
+        })();
+    </script>
+    <script src="scripts/send-emails.js" defer></script>
     <title>Order | Lennie's Commission Info</title>
 </head>
 <body>
@@ -42,7 +58,7 @@
     <main>    
         <div id="order-page">
 
-            <form action="thankyou.html" method="get">
+            <form onsubmit="sendMail(event)">
 
                 <fieldset>
                     <legend>About You!</legend>
@@ -88,9 +104,6 @@
 
                 </fieldset>
 
-                <input type="hidden" name="timestamp" id="time">
-
-
                 <button type="submit" id="submit">Place My Order</button>
 
             </form>
@@ -99,19 +112,19 @@
 
                 <section class="art-card" id="portrait">
                     <h2>Portrait</h2>
-                    <img src="images/Leroy.png" alt="portrait of leroy" loading="lazy">
+                    <img src="images/Leroy.webp" alt="portrait of leroy" loading="lazy">
                     <p>Price: $5-$15</p>
                 </section>
 
                 <section class="art-card" id="half">
                     <h2>Half Body</h2>
-                    <img src="images/Larue.png" alt="half body drawing of larue" loading="lazy">
+                    <img src="images/Larue.webp" alt="half body drawing of larue" loading="lazy">
                     <p>Price: $7-$20</p>
                 </section>
 
                 <section class="art-card" id="full">
                     <h2>Full Body</h2>
-                    <img src="images/Child.png" alt="full body drawing of lewis" loading="lazy">
+                    <img src="images/Child.webp" alt="full body drawing of lewis" loading="lazy">
                     <p>Price: $10-$25</p>
                 </section>
             </div>

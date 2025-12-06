@@ -51,11 +51,11 @@ header img {
     margin: 0 auto;
 }
 
-#prices ul {
+#prices div {
     margin-bottom: 10px;
 }
 
-#tos li, #prices li {
+#tos li, #prices li, #prices h3 {
     margin-bottom: 8px;
     font-size: 1.2em;
 }

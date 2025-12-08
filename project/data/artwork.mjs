@@ -5,6 +5,11 @@ export const artwork = [
         title: "Deep thoughts about the world."
     },
     {
+        imageurl: "images/Commission/Stars.webp",
+        price: "$20",
+        title: "Caution. The Joker is here."
+    },
+    {
         imageurl: "images/Commission/Author.webp",
         price: "$7",
         title: "That's a wine glass, not his mouth."
